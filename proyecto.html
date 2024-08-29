@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transportes TransportVan S.A. - Servicios de transporte de carga y pasajeros con cobertura de Arica a Punta Arenas.">
+    <meta name="keywords" content="transporte, carga, pasajeros, logística, distribución">
+    <meta property="og:title" content="Transportes TransportVan S.A.">
+    <meta property="og:description" content="Servicios de transporte de carga y pasajeros en todo Chile.">
+    <meta property="og:image" content="URL_DE_IMAGEN">
+    <meta property="og:url" content="URL_DE_TU_SITIO">
+    <title>Transportes TransportVan S.A. - Servicios Logísticos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0044cc;
+            --secondary-color: #00bfff;
+            --text-color: #333;
+            --background-color: #f9f9f9;
+            --card-bg: #fff;
+            --card-border: #ddd;
+            --hover-shadow: rgba(0, 0, 0, 0.2);
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        .header-info {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 0.8em;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            z-index: 1000;
+            box-shadow: 0 2px 4px var(--shadow);
+        }
+        .header-info p {
+            margin: 0;
+            display: inline-block;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            top: -20px;
+            box-shadow: 0 4px 8px var(--shadow);
+            z-index: 999;
+        }
+        .header-title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .header-title h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            color: var(--secondary-color);
+        }
+        .header-title h2 {
+            font-size: 1.2em;
+            margin: 0;
+            color: #00ff99;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            font-size: 1.2em;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .social-links-header {
+            display: flex;
+            gap: 15px;
+            font-size: 24px;
+        }
+        .social-links-header a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .social-links-header a:hover {
+            color: #00ff99;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px var(--shadow);
+        }
+        .section {
+            padding: 20px 0;
+        }
+        .section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+        .section p {
+            color: var(--text-color);
+        }
+        .hero {
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .service-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .service-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px var(--card-border);
+            padding: 20px;
+            flex: 1 1 30%;
+            max-width: 30%;
+            text-align: center;
+            transition: box-shadow 0.3s;
+            position: relative;
+        }
+        .service-card:hover {
+            box-shadow: 0 4px 8px var(--hover-shadow);
+        }
+        .service-card img {
+            max-width: 100px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-top: 20px;
+        }
+        .service-card p {
+            color: var(--text-color);
+        }
+        footer {
+            background-color: var(--primary-color);
+            padding: 15px 0;
+            text-align: center;
+            color: #fff;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        .social-links-footer {
+            margin: 10px 0;
+        }
+        .social-links-footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .social-links-footer a:hover {
+            color: #00ff99;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px var(--shadow);
+            z-index: 1000;
+            font-size: 24px;
+        }
+        .whatsapp-button a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .info-boxes {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .info-box {
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1;
+        }
+        .info-box.right {
+            background-color: transparent;
+            border: none;
+            font-size: 1.2em;
+        }
+        .info-box.right h3 {
+            font-size: 1.5em;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0033aa;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-info">
+        <p>Horarios: Las 24 horas del día | Llámanos al <a href="tel:+56940647891" style="color: #fff; text-decoration: none;">+569 40647891</a> o escríbenos: <a href="mailto:boris.ponce@gmail.com" style="color: #fff; text-decoration: none;">boris.ponce@gmail.com</a></p>
+    </div>
+    <header>
+        <div class="header-title">
+            <h1>Transportes TransportVan S.A.</h1>
+            <h2>Servicios Logísticos</h2>
+        </div>
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#contact">Contacto</a>
+            <a href="#about">Nosotros</a>
+            <a href="#blog">Blog</a>
+        </nav>
+        <div class="social-links-header">
+            <a href="https://wa.me/56940647891" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/TransportVan" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/TransportVan" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/transportvan" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/TransportVan" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <section id="inicio" class="section">
+            <div class="hero">
+                <h2>Bienvenido a Transportes TransportVan S.A.</h2>
+                <p>Transporte de carga con cobertura de Arica a Punta Arenas utilizando equipos de última tecnología.</p>
+            </div>
+            <h2>Servicios</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/100x50?text=Camión" alt="Camión de transporte">
+                    <h3>Transporte de Carga</h3>
+                    <p>Nuestro servicio de transporte de carga tiene cobertura de Arica a Punta Arenas utilizando equipos de última tecnología.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/100x50?text=Camión" alt="Camión de transporte">
+                    <h3>Primera y Última Milla</h3>
+                    <p>Servicios de transporte en la primera y última etapa del trayecto, asegurando una entrega eficaz y puntual.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/100x50?text=Camión" alt="Camión de transporte">
+                    <h3>Transporte de Pasajeros</h3>
+                    <p>Transporte seguro y cómodo para grupos y empresas, garantizando una experiencia agradable para todos los pasajeros.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/100x50?text=Camión" alt="Camión de transporte">
+                    <h3>Distribución</h3>
+                    <p>Soluciones de distribución a medida para asegurar que tus productos lleguen a su destino en perfecto estado.</p>
+                </div>
+            </div>
+        </section>
+        <section id="info" class="section">
+            <h2>Información Adicional</h2>
+            <div class="info-boxes">
+                <div class="info-box">
+                    <h3>Normativas ISO</h3>
+                    <p>Nuestro personal de mantenimiento está altamente capacitado y se rige en todo momento por las normativas ISO obtenidas o en implementación.</p>
+                </div>
+                <div class="info-box right">
+                    <h3>Plataforma de Monitoreo</h3>
+                    <p>Transportvan - Contamos con plataforma de monitoreo 24×7, a través de sistemas GPS integrados en toda nuestra flota. Entregando acceso directo a nuestros clientes.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contacto</h2>
+            <p>Estamos aquí para ayudarte con cualquier consulta o solicitud. Completa el formulario a continuación y nos pondremos en contacto contigo a la brevedad.</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="contact-info">
+                <a href="https://wa.me/56940647891" target="_blank" class="whatsapp-button" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Transportes TransportVan S.A. Todos los derechos reservados.</p>
+        <p>Teléfono: <a href="tel:+56940647891" style="color: #fff;">+569 40647891</a> | Correo: <a href="mailto:contacto@transportvan.com" style="color: #fff;">contacto@transportvan.com</a></p>
+        <div class="social-links-footer">
+            <a href="https://www.facebook.com/TransportVan" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/TransportVan" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/transportvan" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/TransportVan" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/56940647891" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
